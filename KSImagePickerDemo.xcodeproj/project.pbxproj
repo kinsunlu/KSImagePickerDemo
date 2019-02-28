@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D1206552227861B006190D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206542227861B006190D3 /* AppDelegate.m */; };
+		6D1206582227861B006190D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206572227861B006190D3 /* ViewController.m */; };
+		6D12065D2227861C006190D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D12065C2227861C006190D3 /* Assets.xcassets */; };
+		6D1206602227861C006190D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D12065E2227861C006190D3 /* LaunchScreen.storyboard */; };
+		6D1206632227861C006190D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206622227861C006190D3 /* main.m */; };
+		6D120694222787D2006190D3 /* KSImagePickerToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12066B222787D2006190D3 /* KSImagePickerToolBar.m */; };
+		6D120695222787D2006190D3 /* KSImagePickerViewerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12066C222787D2006190D3 /* KSImagePickerViewerView.m */; };
+		6D120696222787D2006190D3 /* KSImagePickerViewerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120672222787D2006190D3 /* KSImagePickerViewerCell.m */; };
+		6D120697222787D2006190D3 /* KSImagePickerViewerNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120674222787D2006190D3 /* KSImagePickerViewerNavigationView.m */; };
+		6D120698222787D2006190D3 /* KSImagePickerEditPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120675222787D2006190D3 /* KSImagePickerEditPictureView.m */; };
+		6D120699222787D2006190D3 /* KSImagePickerSelectIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120676222787D2006190D3 /* KSImagePickerSelectIndicator.m */; };
+		6D12069A222787D2006190D3 /* KSImagePickerNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12067A222787D2006190D3 /* KSImagePickerNavigationView.m */; };
+		6D12069B222787D2006190D3 /* KSImagePickerCameraCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12067E222787D2006190D3 /* KSImagePickerCameraCell.m */; };
+		6D12069C222787D2006190D3 /* KSImagePickerBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12067F222787D2006190D3 /* KSImagePickerBaseCell.m */; };
+		6D12069D222787D2006190D3 /* KSImagePickerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120680222787D2006190D3 /* KSImagePickerItemCell.m */; };
+		6D12069E222787D2006190D3 /* KSImagePickerVideoItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120681222787D2006190D3 /* KSImagePickerVideoItemCell.m */; };
+		6D12069F222787D2006190D3 /* KSImagePickerAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120684222787D2006190D3 /* KSImagePickerAlbumCell.m */; };
+		6D1206A0222787D2006190D3 /* KSImagePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120685222787D2006190D3 /* KSImagePickerView.m */; };
+		6D1206A1222787D2006190D3 /* KSImagePickerViewerVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120686222787D2006190D3 /* KSImagePickerViewerVideoCell.m */; };
+		6D1206A2222787D2006190D3 /* KSImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12068A222787D2006190D3 /* KSImagePickerController.m */; };
+		6D1206A3222787D2006190D3 /* KSImagePickerEditPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12068B222787D2006190D3 /* KSImagePickerEditPictureController.m */; };
+		6D1206A4222787D2006190D3 /* KSImagePickerViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D12068C222787D2006190D3 /* KSImagePickerViewerController.m */; };
+		6D1206A5222787D2006190D3 /* KSImagePickerItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120691222787D2006190D3 /* KSImagePickerItemModel.m */; };
+		6D1206A6222787D2006190D3 /* KSImagePickerAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D120693222787D2006190D3 /* KSImagePickerAlbumModel.m */; };
+		6D1206B3222787DE006190D3 /* KSMediaViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206A9222787DE006190D3 /* KSMediaViewerController.m */; };
+		6D1206B4222787DE006190D3 /* KSMediaViewerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206AD222787DE006190D3 /* KSMediaViewerTransition.m */; };
+		6D1206B5222787DE006190D3 /* KSMediaViewerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206AF222787DE006190D3 /* KSMediaViewerCell.m */; };
+		6D1206B6222787DE006190D3 /* KSMediaViewerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206B0222787DE006190D3 /* KSMediaViewerView.m */; };
+		6D1206C0222789CE006190D3 /* KSTriangleDisclosureIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206BA222789CE006190D3 /* KSTriangleDisclosureIndicator.m */; };
+		6D1206C1222789CE006190D3 /* KSIndicatorLabelControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206BC222789CE006190D3 /* KSIndicatorLabelControl.m */; };
+		6D1206C2222789CE006190D3 /* KSTriangleIndicatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206BD222789CE006190D3 /* KSTriangleIndicatorButton.m */; };
+		6D1206C72227914E006190D3 /* KSGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206C62227914E006190D3 /* KSGradientButton.m */; };
+		6D1206CB22279FB0006190D3 /* KSNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206CA22279FB0006190D3 /* KSNavigationView.m */; };
+		6D1206D22227A52E006190D3 /* KSVideoPlayerLiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206D02227A52D006190D3 /* KSVideoPlayerLiteView.m */; };
+		6D1206D52227A548006190D3 /* KSVideoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206D42227A548006190D3 /* KSVideoLayer.m */; };
+		6D1206D82227A939006190D3 /* KSImagePickerEditPictureNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206D72227A939006190D3 /* KSImagePickerEditPictureNavigationView.m */; };
+		6D1206DB2227BC69006190D3 /* KSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1206DA2227BC69006190D3 /* KSNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D1206502227861B006190D3 /* KSImagePickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSImagePickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D1206532227861B006190D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D1206542227861B006190D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6D1206562227861B006190D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6D1206572227861B006190D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D12065C2227861C006190D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D12065F2227861C006190D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D1206612227861C006190D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D1206622227861C006190D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D12066B222787D2006190D3 /* KSImagePickerToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerToolBar.m; sourceTree = "<group>"; };
+		6D12066C222787D2006190D3 /* KSImagePickerViewerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerViewerView.m; sourceTree = "<group>"; };
+		6D12066D222787D2006190D3 /* KSImagePickerSelectIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerSelectIndicator.h; sourceTree = "<group>"; };
+		6D12066E222787D2006190D3 /* KSImagePickerEditPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerEditPictureView.h; sourceTree = "<group>"; };
+		6D12066F222787D2006190D3 /* KSImagePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerView.h; sourceTree = "<group>"; };
+		6D120670222787D2006190D3 /* KSImagePickerAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerAlbumCell.h; sourceTree = "<group>"; };
+		6D120671222787D2006190D3 /* KSImagePickerNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerNavigationView.h; sourceTree = "<group>"; };
+		6D120672222787D2006190D3 /* KSImagePickerViewerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerViewerCell.m; sourceTree = "<group>"; };
+		6D120673222787D2006190D3 /* KSImagePickerViewerVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerViewerVideoCell.h; sourceTree = "<group>"; };
+		6D120674222787D2006190D3 /* KSImagePickerViewerNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerViewerNavigationView.m; sourceTree = "<group>"; };
+		6D120675222787D2006190D3 /* KSImagePickerEditPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerEditPictureView.m; sourceTree = "<group>"; };
+		6D120676222787D2006190D3 /* KSImagePickerSelectIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerSelectIndicator.m; sourceTree = "<group>"; };
+		6D120677222787D2006190D3 /* KSImagePickerViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerViewerView.h; sourceTree = "<group>"; };
+		6D120678222787D2006190D3 /* KSImagePickerToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerToolBar.h; sourceTree = "<group>"; };
+		6D120679222787D2006190D3 /* KSImagePickerViewerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerViewerCell.h; sourceTree = "<group>"; };
+		6D12067A222787D2006190D3 /* KSImagePickerNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerNavigationView.m; sourceTree = "<group>"; };
+		6D12067C222787D2006190D3 /* KSImagePickerItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerItemCell.h; sourceTree = "<group>"; };
+		6D12067D222787D2006190D3 /* KSImagePickerVideoItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerVideoItemCell.h; sourceTree = "<group>"; };
+		6D12067E222787D2006190D3 /* KSImagePickerCameraCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerCameraCell.m; sourceTree = "<group>"; };
+		6D12067F222787D2006190D3 /* KSImagePickerBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerBaseCell.m; sourceTree = "<group>"; };
+		6D120680222787D2006190D3 /* KSImagePickerItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerItemCell.m; sourceTree = "<group>"; };
+		6D120681222787D2006190D3 /* KSImagePickerVideoItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerVideoItemCell.m; sourceTree = "<group>"; };
+		6D120682222787D2006190D3 /* KSImagePickerCameraCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerCameraCell.h; sourceTree = "<group>"; };
+		6D120683222787D2006190D3 /* KSImagePickerBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerBaseCell.h; sourceTree = "<group>"; };
+		6D120684222787D2006190D3 /* KSImagePickerAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerAlbumCell.m; sourceTree = "<group>"; };
+		6D120685222787D2006190D3 /* KSImagePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerView.m; sourceTree = "<group>"; };
+		6D120686222787D2006190D3 /* KSImagePickerViewerVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerViewerVideoCell.m; sourceTree = "<group>"; };
+		6D120687222787D2006190D3 /* KSImagePickerViewerNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerViewerNavigationView.h; sourceTree = "<group>"; };
+		6D120689222787D2006190D3 /* KSImagePickerViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerViewerController.h; sourceTree = "<group>"; };
+		6D12068A222787D2006190D3 /* KSImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerController.m; sourceTree = "<group>"; };
+		6D12068B222787D2006190D3 /* KSImagePickerEditPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerEditPictureController.m; sourceTree = "<group>"; };
+		6D12068C222787D2006190D3 /* KSImagePickerViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerViewerController.m; sourceTree = "<group>"; };
+		6D12068D222787D2006190D3 /* KSImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerController.h; sourceTree = "<group>"; };
+		6D12068E222787D2006190D3 /* KSImagePickerEditPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerEditPictureController.h; sourceTree = "<group>"; };
+		6D120690222787D2006190D3 /* KSImagePickerAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerAlbumModel.h; sourceTree = "<group>"; };
+		6D120691222787D2006190D3 /* KSImagePickerItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerItemModel.m; sourceTree = "<group>"; };
+		6D120692222787D2006190D3 /* KSImagePickerItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImagePickerItemModel.h; sourceTree = "<group>"; };
+		6D120693222787D2006190D3 /* KSImagePickerAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerAlbumModel.m; sourceTree = "<group>"; };
+		6D1206A9222787DE006190D3 /* KSMediaViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerController.m; sourceTree = "<group>"; };
+		6D1206AA222787DE006190D3 /* KSMediaViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerController.h; sourceTree = "<group>"; };
+		6D1206AC222787DE006190D3 /* KSMediaViewerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerTransition.h; sourceTree = "<group>"; };
+		6D1206AD222787DE006190D3 /* KSMediaViewerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerTransition.m; sourceTree = "<group>"; };
+		6D1206AF222787DE006190D3 /* KSMediaViewerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerCell.m; sourceTree = "<group>"; };
+		6D1206B0222787DE006190D3 /* KSMediaViewerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerView.m; sourceTree = "<group>"; };
+		6D1206B1222787DE006190D3 /* KSMediaViewerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerCell.h; sourceTree = "<group>"; };
+		6D1206B2222787DE006190D3 /* KSMediaViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerView.h; sourceTree = "<group>"; };
+		6D1206BA222789CE006190D3 /* KSTriangleDisclosureIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTriangleDisclosureIndicator.m; sourceTree = "<group>"; };
+		6D1206BB222789CE006190D3 /* KSTriangleIndicatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTriangleIndicatorButton.h; sourceTree = "<group>"; };
+		6D1206BC222789CE006190D3 /* KSIndicatorLabelControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSIndicatorLabelControl.m; sourceTree = "<group>"; };
+		6D1206BD222789CE006190D3 /* KSTriangleIndicatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTriangleIndicatorButton.m; sourceTree = "<group>"; };
+		6D1206BE222789CE006190D3 /* KSIndicatorLabelControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSIndicatorLabelControl.h; sourceTree = "<group>"; };
+		6D1206BF222789CE006190D3 /* KSTriangleDisclosureIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTriangleDisclosureIndicator.h; sourceTree = "<group>"; };
+		6D1206C322278BB7006190D3 /* KSLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSLayout.h; sourceTree = "<group>"; };
+		6D1206C52227914E006190D3 /* KSGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSGradientButton.h; sourceTree = "<group>"; };
+		6D1206C62227914E006190D3 /* KSGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSGradientButton.m; sourceTree = "<group>"; };
+		6D1206C922279FB0006190D3 /* KSNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSNavigationView.h; sourceTree = "<group>"; };
+		6D1206CA22279FB0006190D3 /* KSNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSNavigationView.m; sourceTree = "<group>"; };
+		6D1206CD2227A52D006190D3 /* KSVideoPlayerLiteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVideoPlayerLiteView.h; sourceTree = "<group>"; };
+		6D1206D02227A52D006190D3 /* KSVideoPlayerLiteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVideoPlayerLiteView.m; sourceTree = "<group>"; };
+		6D1206D32227A548006190D3 /* KSVideoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVideoLayer.h; sourceTree = "<group>"; };
+		6D1206D42227A548006190D3 /* KSVideoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVideoLayer.m; sourceTree = "<group>"; };
+		6D1206D62227A939006190D3 /* KSImagePickerEditPictureNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSImagePickerEditPictureNavigationView.h; sourceTree = "<group>"; };
+		6D1206D72227A939006190D3 /* KSImagePickerEditPictureNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSImagePickerEditPictureNavigationView.m; sourceTree = "<group>"; };
+		6D1206D92227BC69006190D3 /* KSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSNavigationController.h; sourceTree = "<group>"; };
+		6D1206DA2227BC69006190D3 /* KSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSNavigationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D12064D2227861B006190D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D1206472227861B006190D3 = {
+			isa = PBXGroup;
+			children = (
+				6D1206B82227895D006190D3 /* Plug */,
+				6D1206A7222787DE006190D3 /* KSMediaViewer */,
+				6D12066922278636006190D3 /* KSImagePicker */,
+				6D1206522227861B006190D3 /* KSImagePickerDemo */,
+				6D1206512227861B006190D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D1206512227861B006190D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206502227861B006190D3 /* KSImagePickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D1206522227861B006190D3 /* KSImagePickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206532227861B006190D3 /* AppDelegate.h */,
+				6D1206542227861B006190D3 /* AppDelegate.m */,
+				6D1206562227861B006190D3 /* ViewController.h */,
+				6D1206572227861B006190D3 /* ViewController.m */,
+				6D12065C2227861C006190D3 /* Assets.xcassets */,
+				6D12065E2227861C006190D3 /* LaunchScreen.storyboard */,
+				6D1206612227861C006190D3 /* Info.plist */,
+				6D1206622227861C006190D3 /* main.m */,
+			);
+			path = KSImagePickerDemo;
+			sourceTree = "<group>";
+		};
+		6D12066922278636006190D3 /* KSImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				6D120688222787D2006190D3 /* Controller */,
+				6D12068F222787D2006190D3 /* Model */,
+				6D12066A222787D2006190D3 /* View */,
+			);
+			path = KSImagePicker;
+			sourceTree = "<group>";
+		};
+		6D12066A222787D2006190D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206C822279F6C006190D3 /* NavigationView */,
+				6D12067B222787D2006190D3 /* ImagePickerCell */,
+				6D12066E222787D2006190D3 /* KSImagePickerEditPictureView.h */,
+				6D120675222787D2006190D3 /* KSImagePickerEditPictureView.m */,
+				6D120670222787D2006190D3 /* KSImagePickerAlbumCell.h */,
+				6D120684222787D2006190D3 /* KSImagePickerAlbumCell.m */,
+				6D12066D222787D2006190D3 /* KSImagePickerSelectIndicator.h */,
+				6D120676222787D2006190D3 /* KSImagePickerSelectIndicator.m */,
+				6D120678222787D2006190D3 /* KSImagePickerToolBar.h */,
+				6D12066B222787D2006190D3 /* KSImagePickerToolBar.m */,
+				6D12066F222787D2006190D3 /* KSImagePickerView.h */,
+				6D120685222787D2006190D3 /* KSImagePickerView.m */,
+				6D120679222787D2006190D3 /* KSImagePickerViewerCell.h */,
+				6D120672222787D2006190D3 /* KSImagePickerViewerCell.m */,
+				6D120673222787D2006190D3 /* KSImagePickerViewerVideoCell.h */,
+				6D120686222787D2006190D3 /* KSImagePickerViewerVideoCell.m */,
+				6D120677222787D2006190D3 /* KSImagePickerViewerView.h */,
+				6D12066C222787D2006190D3 /* KSImagePickerViewerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D12067B222787D2006190D3 /* ImagePickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				6D120683222787D2006190D3 /* KSImagePickerBaseCell.h */,
+				6D12067F222787D2006190D3 /* KSImagePickerBaseCell.m */,
+				6D120682222787D2006190D3 /* KSImagePickerCameraCell.h */,
+				6D12067E222787D2006190D3 /* KSImagePickerCameraCell.m */,
+				6D12067C222787D2006190D3 /* KSImagePickerItemCell.h */,
+				6D120680222787D2006190D3 /* KSImagePickerItemCell.m */,
+				6D12067D222787D2006190D3 /* KSImagePickerVideoItemCell.h */,
+				6D120681222787D2006190D3 /* KSImagePickerVideoItemCell.m */,
+			);
+			path = ImagePickerCell;
+			sourceTree = "<group>";
+		};
+		6D120688222787D2006190D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206D92227BC69006190D3 /* KSNavigationController.h */,
+				6D1206DA2227BC69006190D3 /* KSNavigationController.m */,
+				6D12068E222787D2006190D3 /* KSImagePickerEditPictureController.h */,
+				6D12068B222787D2006190D3 /* KSImagePickerEditPictureController.m */,
+				6D12068D222787D2006190D3 /* KSImagePickerController.h */,
+				6D12068A222787D2006190D3 /* KSImagePickerController.m */,
+				6D120689222787D2006190D3 /* KSImagePickerViewerController.h */,
+				6D12068C222787D2006190D3 /* KSImagePickerViewerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6D12068F222787D2006190D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D120690222787D2006190D3 /* KSImagePickerAlbumModel.h */,
+				6D120693222787D2006190D3 /* KSImagePickerAlbumModel.m */,
+				6D120692222787D2006190D3 /* KSImagePickerItemModel.h */,
+				6D120691222787D2006190D3 /* KSImagePickerItemModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D1206A7222787DE006190D3 /* KSMediaViewer */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206A8222787DE006190D3 /* Controller */,
+				6D1206AB222787DE006190D3 /* Model */,
+				6D1206AE222787DE006190D3 /* View */,
+			);
+			path = KSMediaViewer;
+			sourceTree = "<group>";
+		};
+		6D1206A8222787DE006190D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206AA222787DE006190D3 /* KSMediaViewerController.h */,
+				6D1206A9222787DE006190D3 /* KSMediaViewerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6D1206AB222787DE006190D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206AC222787DE006190D3 /* KSMediaViewerTransition.h */,
+				6D1206AD222787DE006190D3 /* KSMediaViewerTransition.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D1206AE222787DE006190D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206B1222787DE006190D3 /* KSMediaViewerCell.h */,
+				6D1206AF222787DE006190D3 /* KSMediaViewerCell.m */,
+				6D1206B2222787DE006190D3 /* KSMediaViewerView.h */,
+				6D1206B0222787DE006190D3 /* KSMediaViewerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D1206B82227895D006190D3 /* Plug */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206C322278BB7006190D3 /* KSLayout.h */,
+				6D1206B9222789C3006190D3 /* KSDisclosureIndicator */,
+				6D1206C422279145006190D3 /* KSGradientButton */,
+				6D1206CC2227A51E006190D3 /* KSVideoPlayer */,
+			);
+			path = Plug;
+			sourceTree = "<group>";
+		};
+		6D1206B9222789C3006190D3 /* KSDisclosureIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206BE222789CE006190D3 /* KSIndicatorLabelControl.h */,
+				6D1206BC222789CE006190D3 /* KSIndicatorLabelControl.m */,
+				6D1206BF222789CE006190D3 /* KSTriangleDisclosureIndicator.h */,
+				6D1206BA222789CE006190D3 /* KSTriangleDisclosureIndicator.m */,
+				6D1206BB222789CE006190D3 /* KSTriangleIndicatorButton.h */,
+				6D1206BD222789CE006190D3 /* KSTriangleIndicatorButton.m */,
+			);
+			path = KSDisclosureIndicator;
+			sourceTree = "<group>";
+		};
+		6D1206C422279145006190D3 /* KSGradientButton */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206C52227914E006190D3 /* KSGradientButton.h */,
+				6D1206C62227914E006190D3 /* KSGradientButton.m */,
+			);
+			path = KSGradientButton;
+			sourceTree = "<group>";
+		};
+		6D1206C822279F6C006190D3 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206C922279FB0006190D3 /* KSNavigationView.h */,
+				6D1206CA22279FB0006190D3 /* KSNavigationView.m */,
+				6D120671222787D2006190D3 /* KSImagePickerNavigationView.h */,
+				6D12067A222787D2006190D3 /* KSImagePickerNavigationView.m */,
+				6D120687222787D2006190D3 /* KSImagePickerViewerNavigationView.h */,
+				6D120674222787D2006190D3 /* KSImagePickerViewerNavigationView.m */,
+				6D1206D62227A939006190D3 /* KSImagePickerEditPictureNavigationView.h */,
+				6D1206D72227A939006190D3 /* KSImagePickerEditPictureNavigationView.m */,
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		6D1206CC2227A51E006190D3 /* KSVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6D1206D32227A548006190D3 /* KSVideoLayer.h */,
+				6D1206D42227A548006190D3 /* KSVideoLayer.m */,
+				6D1206CD2227A52D006190D3 /* KSVideoPlayerLiteView.h */,
+				6D1206D02227A52D006190D3 /* KSVideoPlayerLiteView.m */,
+			);
+			path = KSVideoPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D12064F2227861B006190D3 /* KSImagePickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D1206662227861C006190D3 /* Build configuration list for PBXNativeTarget "KSImagePickerDemo" */;
+			buildPhases = (
+				6D12064C2227861B006190D3 /* Sources */,
+				6D12064D2227861B006190D3 /* Frameworks */,
+				6D12064E2227861B006190D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSImagePickerDemo;
+			productName = KSImagePickerDemo;
+			productReference = 6D1206502227861B006190D3 /* KSImagePickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D1206482227861B006190D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = kinsun;
+				TargetAttributes = {
+					6D12064F2227861B006190D3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6D12064B2227861B006190D3 /* Build configuration list for PBXProject "KSImagePickerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D1206472227861B006190D3;
+			productRefGroup = 6D1206512227861B006190D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D12064F2227861B006190D3 /* KSImagePickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D12064E2227861B006190D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D1206602227861C006190D3 /* LaunchScreen.storyboard in Resources */,
+				6D12065D2227861C006190D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D12064C2227861B006190D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D12069F222787D2006190D3 /* KSImagePickerAlbumCell.m in Sources */,
+				6D1206C72227914E006190D3 /* KSGradientButton.m in Sources */,
+				6D1206D52227A548006190D3 /* KSVideoLayer.m in Sources */,
+				6D1206A3222787D2006190D3 /* KSImagePickerEditPictureController.m in Sources */,
+				6D1206582227861B006190D3 /* ViewController.m in Sources */,
+				6D1206B3222787DE006190D3 /* KSMediaViewerController.m in Sources */,
+				6D1206A0222787D2006190D3 /* KSImagePickerView.m in Sources */,
+				6D1206DB2227BC69006190D3 /* KSNavigationController.m in Sources */,
+				6D120694222787D2006190D3 /* KSImagePickerToolBar.m in Sources */,
+				6D1206632227861C006190D3 /* main.m in Sources */,
+				6D1206B4222787DE006190D3 /* KSMediaViewerTransition.m in Sources */,
+				6D120695222787D2006190D3 /* KSImagePickerViewerView.m in Sources */,
+				6D12069A222787D2006190D3 /* KSImagePickerNavigationView.m in Sources */,
+				6D1206C0222789CE006190D3 /* KSTriangleDisclosureIndicator.m in Sources */,
+				6D1206552227861B006190D3 /* AppDelegate.m in Sources */,
+				6D1206A4222787D2006190D3 /* KSImagePickerViewerController.m in Sources */,
+				6D12069E222787D2006190D3 /* KSImagePickerVideoItemCell.m in Sources */,
+				6D1206A5222787D2006190D3 /* KSImagePickerItemModel.m in Sources */,
+				6D1206CB22279FB0006190D3 /* KSNavigationView.m in Sources */,
+				6D1206D22227A52E006190D3 /* KSVideoPlayerLiteView.m in Sources */,
+				6D1206D82227A939006190D3 /* KSImagePickerEditPictureNavigationView.m in Sources */,
+				6D120698222787D2006190D3 /* KSImagePickerEditPictureView.m in Sources */,
+				6D1206C2222789CE006190D3 /* KSTriangleIndicatorButton.m in Sources */,
+				6D120697222787D2006190D3 /* KSImagePickerViewerNavigationView.m in Sources */,
+				6D120696222787D2006190D3 /* KSImagePickerViewerCell.m in Sources */,
+				6D120699222787D2006190D3 /* KSImagePickerSelectIndicator.m in Sources */,
+				6D12069C222787D2006190D3 /* KSImagePickerBaseCell.m in Sources */,
+				6D12069D222787D2006190D3 /* KSImagePickerItemCell.m in Sources */,
+				6D1206A2222787D2006190D3 /* KSImagePickerController.m in Sources */,
+				6D1206B5222787DE006190D3 /* KSMediaViewerCell.m in Sources */,
+				6D1206A1222787D2006190D3 /* KSImagePickerViewerVideoCell.m in Sources */,
+				6D1206C1222789CE006190D3 /* KSIndicatorLabelControl.m in Sources */,
+				6D12069B222787D2006190D3 /* KSImagePickerCameraCell.m in Sources */,
+				6D1206A6222787D2006190D3 /* KSImagePickerAlbumModel.m in Sources */,
+				6D1206B6222787DE006190D3 /* KSMediaViewerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D12065E2227861C006190D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D12065F2227861C006190D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D1206642227861C006190D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6D1206652227861C006190D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D1206672227861C006190D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4YZH76AUW;
+				INFOPLIST_FILE = KSImagePickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinsun.KSImagePickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6D1206682227861C006190D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4YZH76AUW;
+				INFOPLIST_FILE = KSImagePickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinsun.KSImagePickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D12064B2227861B006190D3 /* Build configuration list for PBXProject "KSImagePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1206642227861C006190D3 /* Debug */,
+				6D1206652227861C006190D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D1206662227861C006190D3 /* Build configuration list for PBXNativeTarget "KSImagePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1206672227861C006190D3 /* Debug */,
+				6D1206682227861C006190D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D1206482227861B006190D3 /* Project object */;
+}
