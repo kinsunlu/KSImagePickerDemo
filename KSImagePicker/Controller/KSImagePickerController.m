@@ -8,7 +8,6 @@
 
 #import "KSImagePickerController.h"
 #import "KSImagePickerView.h"
-#import "KSImagePickerNavigationView.h"
 
 #import "KSImagePickerVideoItemCell.h"
 #import "KSImagePickerCameraCell.h"
@@ -18,6 +17,8 @@
 
 #import "KSImagePickerViewerController.h"
 #import "KSImagePickerEditPictureController.h"
+
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface KSImagePickerController () <UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate, UIImagePickerControllerDelegate, KSImagePickerEditPictureDelegate>
 
@@ -81,9 +82,9 @@
     }];
 }
 
-static NSString * const k_iden1 = @"PHImagePickerItemCell";
-static NSString * const k_iden2 = @"PHImagePickerVideoItemCell";
-static NSString * const k_iden3 = @"PHImagePickerCameraCell";
+static NSString * const k_iden1 = @"KSImagePickerItemCell";
+static NSString * const k_iden2 = @"KSImagePickerVideoItemCell";
+static NSString * const k_iden3 = @"KSImagePickerCameraCell";
 
 - (void)loadView {
     KSImagePickerView *view = [[KSImagePickerView alloc] init];
@@ -219,10 +220,15 @@ static NSString * const k_iden3 = @"PHImagePickerCameraCell";
             [weakSelf.navigationController presentViewController:cameraCtl animated:YES completion:nil];
         } cancelHandler:nil];
     } else {
-#pragma mark - 视频拍摄跳转
         [KSImagePickerController authorityCheckUpWithController:self type:KSImagePickerMediaTypeVideo completionHandler:^(KSImagePickerMediaType type) {
             [KSImagePickerController authorityAVMediaTypeAudioCheckUpWithController:self completionHandler:^(BOOL isOpen) {
-                
+                UIImagePickerController *cameraCtl = [[UIImagePickerController alloc] init];
+                cameraCtl.sourceType = UIImagePickerControllerSourceTypeCamera;
+                cameraCtl.mediaTypes = @[(__bridge NSString *)kUTTypeMovie];
+                cameraCtl.videoQuality = UIImagePickerControllerQualityTypeHigh;
+                cameraCtl.allowsEditing = YES ;
+                cameraCtl.delegate = weakSelf;
+                [weakSelf.navigationController presentViewController:cameraCtl animated:YES completion:nil];
             } cancelHandler:nil];
         } cancelHandler:nil];
     }
@@ -241,20 +247,27 @@ static NSString * const k_iden3 = @"PHImagePickerCameraCell";
 
 #pragma mark - UIImagePickerController
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
-    [picker dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
-    if (error == nil) {
-        __weak typeof(self) weakSelf = self;
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            PHAssetCollection *assetCollection = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil].firstObject;
-            PHAsset *asset = [PHAsset fetchAssetsInAssetCollection:assetCollection options:nil].lastObject;
-            [weakSelf updateAssetData:asset];
-        });
+    __block NSString *createdAssetID = nil;
+    NSError *error = nil;
+    [PHPhotoLibrary.sharedPhotoLibrary performChangesAndWait:^{
+        PHAssetChangeRequest *request = nil;
+        CFStringRef type = (__bridge CFStringRef)[info objectForKey:UIImagePickerControllerMediaType];
+        if (type == kUTTypeImage) {
+            UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+            request = [PHAssetChangeRequest creationRequestForAssetFromImage:image];
+        } else if (type == kUTTypeMovie) {
+            NSURL *URL = [info objectForKey:UIImagePickerControllerMediaURL];
+            request = [PHAssetChangeRequest creationRequestForAssetFromVideoAtFileURL:URL];
+        }
+        createdAssetID = request.placeholderForCreatedAsset.localIdentifier;
+    } error:&error];
+    if (error == nil && createdAssetID != nil) {
+        PHAsset *result = [PHAsset fetchAssetsWithLocalIdentifiers:@[createdAssetID] options:nil].firstObject;
+        if (result != nil) {
+            [self updateAssetData:result];
+        }
     }
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)updateAssetData:(PHAsset *)asset {
@@ -492,7 +505,7 @@ static NSString * const k_iden3 = @"PHImagePickerCameraCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * const iden = @"PHImagePickerAlbumCell";
+    static NSString * const iden = @"KSImagePickerAlbumCell";
     KSImagePickerAlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:iden];
     if (cell == nil) {
         cell = [[KSImagePickerAlbumCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:iden];

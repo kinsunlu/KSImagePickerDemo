@@ -34,8 +34,8 @@
     }
 }
 
-static NSString * const k_iden1 = @"PHImagePickerViewerCell";
-static NSString * const k_iden2 = @"PHImagePickerViewerVideoCell";
+static NSString * const k_iden1 = @"KSImagePickerViewerCell";
+static NSString * const k_iden2 = @"KSImagePickerViewerVideoCell";
 - (KSMediaViewerView *)loadMediaViewerView {
     KSImagePickerViewerView *view = [[KSImagePickerViewerView alloc] init];
     

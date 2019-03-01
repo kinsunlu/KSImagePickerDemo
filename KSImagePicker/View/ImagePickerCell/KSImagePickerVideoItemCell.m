@@ -9,13 +9,13 @@
 #import "KSImagePickerVideoItemCell.h"
 #import "KSLayout.h"
 
-@interface _PHIPVideoInfomationView : UIView
+@interface _KSIPVideoInfomationView : UIView
 
 @property (nonatomic) NSString *text;
 
 @end
 
-@implementation _PHIPVideoInfomationView {
+@implementation _KSIPVideoInfomationView {
     __weak CAGradientLayer *_gradientLayer;
     __weak CALayer *_videoIndLayer;
     __weak CATextLayer *_textLayer;
@@ -88,14 +88,14 @@
 @end
 
 @implementation KSImagePickerVideoItemCell {
-    __weak _PHIPVideoInfomationView *_infoView;
+    __weak _KSIPVideoInfomationView *_infoView;
 }
 
 - (void)initView {
     [super initView];
     UIView *contentView = self.contentView;
     
-    _PHIPVideoInfomationView *infoView = [[_PHIPVideoInfomationView alloc] init];
+    _KSIPVideoInfomationView *infoView = [[_KSIPVideoInfomationView alloc] init];
     [contentView addSubview:infoView];
     _infoView = infoView;
 }

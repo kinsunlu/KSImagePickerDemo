@@ -111,7 +111,7 @@
             [weakSelf presentViewController:nav animated:YES completion:nil];
         };
         
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"选择PHImagePickerEditPictureStyle" message:@"PHImagePickerEditPictureStyleNormal为正常模式。\nPHImagePickerEditPictureStyleCircular为圆圈模式，一般用于选择用户头像。" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"选择KSImagePickerEditPictureStyle" message:@"KSImagePickerEditPictureStyleNormal为正常模式。\nKSImagePickerEditPictureStyleCircular为圆圈模式，一般用于选择用户头像。" preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction *normal = [UIAlertAction actionWithTitle:normalString style:UIAlertActionStyleDefault handler:handler];
         [alert addAction:normal];
