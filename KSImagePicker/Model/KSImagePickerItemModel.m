@@ -28,6 +28,7 @@ static CGSize k_thumbSize = {0.f, 0.f};
         options.resizeMode = PHImageRequestOptionsResizeModeNone;
         // 同步获得图片, 只会返回1张图片
         options.synchronous = YES;
+        options.networkAccessAllowed = YES;
         k_pictureOptions = options;
     }
     return k_pictureOptions;
@@ -40,6 +41,7 @@ static CGSize k_thumbSize = {0.f, 0.f};
         options.resizeMode = PHImageRequestOptionsResizeModeNone;
         // 同步获得图片, 只会返回1张图片
         options.synchronous = NO;
+        options.networkAccessAllowed = YES;
         k_pictureViewerOptions = options;
     }
     return k_pictureViewerOptions;
@@ -51,6 +53,7 @@ static CGSize k_thumbSize = {0.f, 0.f};
         PHVideoRequestOptions *options = [[PHVideoRequestOptions alloc] init];
         options.version = PHVideoRequestOptionsVersionCurrent;
         options.deliveryMode = PHVideoRequestOptionsDeliveryModeAutomatic;
+        options.networkAccessAllowed = YES;
         k_videoOptions = options;
     }
     return k_videoOptions;
